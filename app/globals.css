@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 23% 97%;
+  --foreground: 222 47% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11%;
+  --primary: 190 100% 42%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 220 16% 92%;
+  --secondary-foreground: 222 47% 11%;
+  --muted: 220 14% 93%;
+  --muted-foreground: 215 16% 47%;
+  --accent: 190 80% 94%;
+  --accent-foreground: 190 70% 23%;
+  --border: 214 32% 90%;
+  --input: 214 32% 90%;
+  --ring: 190 100% 42%;
+  --success: 150 69% 34%;
+  --warning: 38 92% 50%;
+  --danger: 0 84% 60%;
+}
+
+.dark {
+  --background: 224 38% 7%;
+  --foreground: 210 40% 98%;
+  --card: 224 35% 10%;
+  --card-foreground: 210 40% 98%;
+  --popover: 224 35% 10%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 190 100% 56%;
+  --primary-foreground: 224 38% 7%;
+  --secondary: 223 30% 16%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 223 30% 16%;
+  --muted-foreground: 215 20% 65%;
+  --accent: 191 65% 18%;
+  --accent-foreground: 190 100% 88%;
+  --border: 223 24% 18%;
+  --input: 223 24% 18%;
+  --ring: 190 100% 56%;
+  --success: 150 57% 52%;
+  --warning: 40 100% 60%;
+  --danger: 0 88% 66%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), system-ui, sans-serif;
+}
+
+::selection {
+  background: hsl(var(--primary) / 0.2);
+}
+
+.font-sans {
+  font-family: var(--font-body), system-ui, sans-serif;
+}

@@ -1,0 +1,32 @@
+
+> focusflow@1.0.0 build
+> next build
+
+   ▲ Next.js 15.3.1
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 5.0s
+   Linting and checking validity of types ...
+ ⨯ ESLint: Failed to patch ESLint because the calling module was not recognized. If you are using a newer ESLint version that may be unsupported, please create a GitHub issue: https://github.com/microsoft/rushstack/issues
+   Collecting page data ...
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                     128 kB         229 kB
+└ ○ /_not-found                            986 B         103 kB
++ First Load JS shared by all             102 kB
+  ├ chunks/4bd1b696-5dada9d4d5b3bb1b.js  53.2 kB
+  ├ chunks/684-40500b764eeea0f0.js       46.4 kB
+  └ other shared chunks (total)          2.03 kB
+
+
+○  (Static)  prerendered as static content
+
+EXITCODE=0  
